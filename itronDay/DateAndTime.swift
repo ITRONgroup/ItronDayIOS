@@ -13,7 +13,7 @@ class DateAndTime: UIViewController {
         super.viewDidLoad()
     }
     func dateAndTime() {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 25))
         label.center = CGPoint(x: 200, y: 134)
         label.textAlignment = .center
         label.textColor = UIColor.init(hexString: "#11115d")

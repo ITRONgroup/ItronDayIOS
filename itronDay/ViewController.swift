@@ -54,7 +54,7 @@ class ViewController: UIViewController{//}, ARSCNViewDelegate {
         let buttonTextColor: UIColor
         buttonTextColor = UIColor.init(hexString: "#11115d")
         
-        let backButton = UIButton(frame: CGRect(x: 88, y: 628, width: 236, height: 82))
+        let backButton = UIButton(frame: CGRect(x: 80, y: 685, width: 236, height: 82))
         backButton.setTitle("Вернуться", for: .normal)
         backButton.titleLabel?.font = UIFont(name: "ComicSansMS", size: 25)!
         backButton.setTitleColor(buttonTextColor, for: .normal)
@@ -62,7 +62,7 @@ class ViewController: UIViewController{//}, ARSCNViewDelegate {
 
         self.view.addSubview(backButton)
                 
-        let calendarButton = UIButton(frame: CGRect(x: 106, y: 535, width: 200, height: 70))
+        let calendarButton = UIButton(frame: CGRect(x: 100, y: 565, width: 200, height: 70))
         calendarButton.setTitle("Календарь", for: .normal)
         calendarButton.titleLabel?.font = UIFont(name: "ComicSansMS", size: 25)!
         calendarButton.setTitleColor(buttonTextColor, for: .normal)
