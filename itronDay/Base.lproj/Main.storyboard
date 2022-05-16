@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bHl-Sw-92e">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bHl-Sw-92e">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--StartVC-->
+        <scene sceneID="D1P-YF-sIA">
+            <objects>
+                <viewController id="7fG-AM-tZI" customClass="StartVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROS-df-dvA">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1gg-ZA-xfg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIP-DN-ZCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11" y="-1341"/>
+        </scene>
         <!--Start ScreenVC-->
         <scene sceneID="rWU-Gh-h4i">
             <objects>
                 <viewController storyboardIdentifier="StartScreenVC" id="ii4-Ow-Vdg" customClass="StartScreenVC" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZuC-Ro-WTM">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tEB-eH-RSH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,7 +44,7 @@
             <objects>
                 <viewController storyboardIdentifier="WarningVC" id="g5z-Jw-6OG" customClass="WarningVC" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqt-sn-POh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH2-E4-5Pe">
@@ -56,7 +71,7 @@
             <objects>
                 <viewController storyboardIdentifier="DoYouKnowVC" id="4MO-B4-bSR" customClass="DoYouKnowVC" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5wv-25-gg1">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSL-Mw-ZeP">
@@ -80,7 +95,7 @@
             <objects>
                 <viewController storyboardIdentifier="LogoSearchVC" id="Div-6W-QBQ" customClass="LogoSearchVC" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xq2-8M-myY">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-Qu-mSl">
@@ -89,7 +104,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <segue destination="Fnv-hg-z1g" kind="presentation" modalPresentationStyle="fullScreen" id="Pe5-X4-hjf"/>
+                                    <segue destination="v91-PM-eoR" kind="presentation" modalPresentationStyle="fullScreen" id="BLe-Mh-q18"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AP-fE-h1a">
@@ -116,7 +131,7 @@
             <objects>
                 <viewController storyboardIdentifier="ARVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fnv-hg-z1g" customClass="ViewController" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zKb-3T-vAM">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MX6-v2-q72">
@@ -158,7 +173,7 @@
             <objects>
                 <viewController id="UwD-9j-VDh" customClass="CalendarAlertVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z9i-xD-RQO">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="C7x-Kc-JWx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -173,11 +188,11 @@
             <objects>
                 <viewController storyboardIdentifier="CalendarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v91-PM-eoR" customClass="CalendarVC" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1a-Wl-6u9">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-Zi-50E">
-                                <rect key="frame" x="42" y="182" width="300" height="298"/>
+                                <rect key="frame" x="42" y="182" width="338" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                             </datePicker>
@@ -191,6 +206,7 @@
                             <constraint firstItem="TAl-Zi-50E" firstAttribute="leading" secondItem="3yL-Qb-7ZX" secondAttribute="leading" constant="42" id="pWy-Dq-mwM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ytk-eh-Zn7"/>
                     <connections>
                         <outlet property="dateTextField" destination="TAl-Zi-50E" id="0Rh-1T-j3z"/>
                     </connections>
@@ -204,7 +220,7 @@
             <objects>
                 <viewController storyboardIdentifier="HolidayVC" id="8Mt-5w-f1L" customClass="HolidayVC" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gsr-yI-AdW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo3-ju-rgr">
@@ -246,18 +262,12 @@
             <objects>
                 <viewController storyboardIdentifier="Slider" id="bHl-Sw-92e" customClass="SliderViewController" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KHu-2t-zNA">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjd-pS-Uhc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="448" height="900"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="buttonSlider" translatesAutoresizingMaskIntoConstraints="NO" id="n62-GR-aIR">
-                                        <rect key="frame" x="18" y="503" width="361" height="234"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fOS-gN-bAO"/>
@@ -277,80 +287,38 @@
             <objects>
                 <viewController id="Kwg-OQ-M3S" customClass="WeatherViewController" customModule="itronDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LQ8-gd-AsM">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-fK-bFp" customClass="RightNowView" customModule="itronDay" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="xxP-Bv-wzh">
-                                        <rect key="frame" x="10" y="213.5" width="46.5" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="doYouKnow" translatesAutoresizingMaskIntoConstraints="NO" id="Ufy-dF-ZwP">
-                                        <rect key="frame" x="0.0" y="-32" width="390" height="907"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="907" id="762-R1-oia"/>
-                                            <constraint firstAttribute="width" constant="390" id="G9q-nl-md0"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUl-nr-t3V">
-                                        <rect key="frame" x="180" y="443" width="182" height="71"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="71" id="cgO-Zf-kBM"/>
-                                            <constraint firstAttribute="width" constant="182" id="eJB-xh-HVn"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
-                                        <connections>
-                                            <segue destination="Div-6W-QBQ" kind="presentation" modalPresentationStyle="fullScreen" id="bXx-H6-Fr2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-0X-ZZR">
-                                        <rect key="frame" x="110" y="738" width="184" height="14"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="184" id="Z2S-YO-DKb"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgP-wb-GHQ">
-                                        <rect key="frame" x="110" y="738" width="184" height="71"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="184" id="VQn-Mq-NVF"/>
-                                            <constraint firstAttribute="height" constant="71" id="mU3-Th-DV3"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
-                                        <connections>
-                                            <segue destination="g5z-Jw-6OG" kind="presentation" modalPresentationStyle="fullScreen" id="tDd-Hm-m9e"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-fK-bFp" customClass="RightNowView" customModule="itronDay" customModuleProvider="target">
+                                <rect key="frame" x="20" y="0.0" width="30" height="36"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstItem="mUl-nr-t3V" firstAttribute="top" secondItem="HPG-fK-bFp" secondAttribute="top" constant="443" id="0Ye-al-emB"/>
-                                    <constraint firstItem="Dax-0X-ZZR" firstAttribute="top" secondItem="mUl-nr-t3V" secondAttribute="bottom" constant="224" id="1kV-Dt-kWV"/>
-                                    <constraint firstItem="JgP-wb-GHQ" firstAttribute="leading" secondItem="HPG-fK-bFp" secondAttribute="leading" constant="110" id="88d-68-4Ip"/>
-                                    <constraint firstItem="JgP-wb-GHQ" firstAttribute="top" secondItem="mUl-nr-t3V" secondAttribute="bottom" constant="224" id="AE6-QE-iji"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ufy-dF-ZwP" secondAttribute="bottom" constant="21" id="Ak9-KP-wmT"/>
-                                    <constraint firstAttribute="trailing" secondItem="mUl-nr-t3V" secondAttribute="trailing" constant="52" id="DTF-81-xDy"/>
-                                    <constraint firstAttribute="trailing" secondItem="JgP-wb-GHQ" secondAttribute="trailing" constant="120" id="E8W-TH-zIb"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ufy-dF-ZwP" secondAttribute="trailing" constant="24" id="SPH-vc-Rvq"/>
-                                    <constraint firstItem="mUl-nr-t3V" firstAttribute="leading" secondItem="HPG-fK-bFp" secondAttribute="leading" constant="180" id="Wx2-jx-VLl"/>
-                                    <constraint firstItem="Ufy-dF-ZwP" firstAttribute="top" secondItem="HPG-fK-bFp" secondAttribute="top" constant="-32" id="aDg-aD-Zq8"/>
-                                    <constraint firstItem="Ufy-dF-ZwP" firstAttribute="leading" secondItem="HPG-fK-bFp" secondAttribute="leading" id="bwO-YQ-aCw"/>
-                                    <constraint firstItem="Dax-0X-ZZR" firstAttribute="leading" secondItem="HPG-fK-bFp" secondAttribute="leading" constant="110" id="cpN-WT-fDZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="JgP-wb-GHQ" secondAttribute="bottom" constant="87" id="rYA-c8-kIx"/>
+                                    <constraint firstAttribute="height" constant="1" id="EYC-ZU-eEb"/>
+                                    <constraint firstAttribute="width" constant="1" id="ckT-dC-246"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-Op-lqx">
+                                <rect key="frame" x="144" y="277" width="264" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="Div-6W-QBQ" kind="presentation" modalPresentationStyle="fullScreen" id="PbS-hh-GhU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-IE-odO">
+                                <rect key="frame" x="55" y="711" width="336" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="g5z-Jw-6OG" kind="presentation" modalPresentationStyle="fullScreen" id="VHI-GP-JI4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6bK-br-Vni"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                        <constraints>
-                            <constraint firstItem="HPG-fK-bFp" firstAttribute="top" secondItem="LQ8-gd-AsM" secondAttribute="topMargin" constant="-44" id="1zH-D5-WOa"/>
-                            <constraint firstItem="HPG-fK-bFp" firstAttribute="leading" secondItem="6bK-br-Vni" secondAttribute="leading" id="Eyk-hZ-BbE"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZbZ-cE-bSb"/>
                     <connections>
@@ -359,18 +327,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8H-cR-1Fj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566.1538461538462" y="-1341.4691943127962"/>
+            <point key="canvasLocation" x="1565.8878504672896" y="-1341.9006479481643"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="PbS-hh-GhU"/>
         <segue reference="ADi-Jk-hFD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="aim" width="310" height="310"/>
         <image name="button1" width="260" height="100"/>
         <image name="button2" width="210" height="90"/>
-        <image name="buttonSlider" width="600" height="400"/>
-        <image name="doYouKnow" width="1712" height="3704"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

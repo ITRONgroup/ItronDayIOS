@@ -18,8 +18,8 @@ class StartScreenVC: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "startScreen.png")!)
-
-        let nextButton = UIButton(frame: CGRect(x: 174, y: 433, width: 220, height: 86))
+    
+        let nextButton = UIButton(frame: CGRect(x: 174 / 320 * screenSize.width, y: 433 / 840 * screenSize.height, width: 220, height: 86))
         nextButton.setTitle("", for: .normal)
         nextButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 

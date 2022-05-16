@@ -27,8 +27,8 @@ class LogoSearchVC: UIViewController {
         dateFormatter.dateFormat = "dd MMM"  // Set Date/Time Style
         let dateString = dateFormatter.string(from: date)
         print (dateString)
-        
-        let labelDate = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 150))
+    
+        let labelDate = UILabel(frame: CGRect(x: 0 / 320 * screenSize.width, y: 0 / 840 * screenSize.height, width: 200, height: 150))
         labelDate.center = CGPoint(x: 200, y: 55)
         labelDate.textAlignment = .center
         labelDate.textColor = UIColor.init(hexString: "#11115d")

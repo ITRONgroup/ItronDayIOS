@@ -127,13 +127,15 @@ class cubeNode: SCNNode {
         let dateEventsFormatter = DateFormatter()    // Create Date Formatter
         dateEventsFormatter.dateFormat = "dd.MM"  // Set Date/Time Style
         let dateEventsString = dateEventsFormatter.string(from: date)
+        
+        print ("vgvhgv")
            
         print (dateEventsString)
         
-        for index in 1...1300 {
-            if (dateEventsString == eventsCsvRows[index][1]){
+        for index in 1...366 {
+            if (dateEventsString == eventsCsvRows[index][0]){
                 var event = ["", ""]
-                event.insert(eventsCsvRows[index][2], at: 0)// = csvRows[index][2] as! String
+                event.insert(eventsCsvRows[index][1], at: 0)// = csvRows[index][2] as! String
                 //event.insert(csvRows[index+1][2], at: 0)
                 print (event)
                 stringEvent = event.joined(separator: "")

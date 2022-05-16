@@ -18,7 +18,7 @@ class DoYouKnowVC: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "startScreen.png")!)
-        let nextButton = UIButton(frame: CGRect(x: 173, y: 444, width: 209, height: 75))
+        let nextButton = UIButton(frame: CGRect(x: 173 / 320 * screenSize.width, y: 444 / 840 * screenSize.height, width: 209, height: 75))
         nextButton.setTitle("", for: .normal)
         nextButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 

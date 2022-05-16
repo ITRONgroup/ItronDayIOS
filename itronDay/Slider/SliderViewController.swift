@@ -6,10 +6,14 @@
 //
 import UIKit
 
+let screenSize: CGRect = UIScreen.main.bounds
+
 class SliderViewController: UIViewController, SlideToOpenDelegate {
+    
     @IBOutlet weak var SliderView: UIView!
+    
     lazy var slideToOpen: SlideToOpenView = {
-        let slide = SlideToOpenView(frame: CGRect(x: 47, y: 604, width: 302, height: 120))
+        let slide = SlideToOpenView(frame: CGRect(x: 40 / 320 * screenSize.width, y: 590 / 840 * screenSize.height, width: 302, height: 120))
         slide.sliderViewTopDistance = 0
         slide.sliderCornerRadius = 58
         slide.showSliderText = true
@@ -18,18 +22,16 @@ class SliderViewController: UIViewController, SlideToOpenDelegate {
         slide.textColor = UIColor.black
         slide.sliderBackgroundColor = UIColor(hexString: "#ff4e81")
         slide.delegate = self
-
+        
         return slide
     }()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Slider.png")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        
         
         
         self.view.addSubview(slideToOpen)

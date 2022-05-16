@@ -17,8 +17,8 @@ class WarningVC: UIViewController {
         backgroundImage.image = UIImage(named: "warning.png")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        
-        let button = UIButton(frame: CGRect(x: 90, y: 180, width: 220, height: 86))
+    
+        let button = UIButton(frame: CGRect(x: 90 / 320 * screenSize.width, y: 180 / 840 * screenSize.height, width: 220, height: 86))
         button.setTitle("", for: .normal)
         button.addTarget(self, action: #selector(buttonCounter), for: .touchUpInside)
 

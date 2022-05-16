@@ -12,7 +12,6 @@
 		A51AE95B27CE76B900BA59F4 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51AE95A27CE76B900BA59F4 /* SliderViewController.swift */; };
 		A51AE95D27D0EE8400BA59F4 /* CalendarAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51AE95C27D0EE8400BA59F4 /* CalendarAlertVC.swift */; };
 		A51AE96727DD07F800BA59F4 /* DataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51AE96627DD07F800BA59F4 /* DataFactory.swift */; };
-		A51AE96F27E79CE600BA59F4 /* Events.csv in Resources */ = {isa = PBXBuildFile; fileRef = A51AE96E27E79CE600BA59F4 /* Events.csv */; };
 		A51C0DB628159EB00027B00D /* DateAndTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C0DB528159EB00027B00D /* DateAndTime.swift */; };
 		A559BC7128105109005DA920 /* Quotes.csv in Resources */ = {isa = PBXBuildFile; fileRef = A559BC7028105109005DA920 /* Quotes.csv */; };
 		A57F1D8F27AD5B7F00971A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F1D8E27AD5B7F00971A8E /* AppDelegate.swift */; };
@@ -22,6 +21,7 @@
 		A57F1D9827AD5B8D00971A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57F1D9727AD5B8D00971A8E /* Assets.xcassets */; };
 		A57F1D9B27AD5B8D00971A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57F1D9927AD5B8D00971A8E /* LaunchScreen.storyboard */; };
 		A58EECB027F72B1D00B0D9AC /* cubeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EECAF27F72B1D00B0D9AC /* cubeNode.swift */; };
+		A5AE76B42832702F00805BB9 /* Events.csv in Resources */ = {isa = PBXBuildFile; fileRef = A5AE76B32832702F00805BB9 /* Events.csv */; };
 		BA042F7327EB4F8D00F58B85 /* que-fontita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA042F6E27EB4F8C00F58B85 /* que-fontita.ttf */; };
 		BA042F7427EB4F8D00F58B85 /* sketchycomic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA042F6F27EB4F8C00F58B85 /* sketchycomic.ttf */; };
 		BA042F7527EB4F8D00F58B85 /* sketch-coursive.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA042F7027EB4F8D00F58B85 /* sketch-coursive.ttf */; };
@@ -51,7 +51,6 @@
 		A51AE95A27CE76B900BA59F4 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		A51AE95C27D0EE8400BA59F4 /* CalendarAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAlertVC.swift; sourceTree = "<group>"; };
 		A51AE96627DD07F800BA59F4 /* DataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFactory.swift; sourceTree = "<group>"; };
-		A51AE96E27E79CE600BA59F4 /* Events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Events.csv; sourceTree = "<group>"; };
 		A51C0DB528159EB00027B00D /* DateAndTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTime.swift; sourceTree = "<group>"; };
 		A559BC7028105109005DA920 /* Quotes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quotes.csv; sourceTree = "<group>"; };
 		A57F1D8B27AD5B7F00971A8E /* itronDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itronDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +62,7 @@
 		A57F1D9A27AD5B8D00971A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57F1D9C27AD5B8D00971A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A58EECAF27F72B1D00B0D9AC /* cubeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cubeNode.swift; sourceTree = "<group>"; };
+		A5AE76B32832702F00805BB9 /* Events.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Events.csv; sourceTree = "<group>"; };
 		BA042F6E27EB4F8C00F58B85 /* que-fontita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "que-fontita.ttf"; sourceTree = "<group>"; };
 		BA042F6F27EB4F8C00F58B85 /* sketchycomic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sketchycomic.ttf; sourceTree = "<group>"; };
 		BA042F7027EB4F8D00F58B85 /* sketch-coursive.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sketch-coursive.ttf"; sourceTree = "<group>"; };
@@ -100,7 +100,6 @@
 		A51AE96A27E33DC900BA59F4 /* CalendarVC */ = {
 			isa = PBXGroup;
 			children = (
-				A51AE96E27E79CE600BA59F4 /* Events.csv */,
 				BA4C59B627D21CD400870376 /* HolidayVC.swift */,
 				BAC233D027CCFB7100795F2C /* CalendarVC.swift */,
 				A51AE95C27D0EE8400BA59F4 /* CalendarAlertVC.swift */,
@@ -160,6 +159,7 @@
 				A51AE96D27E3407700BA59F4 /* Slider */,
 				A57F1D9027AD5B7F00971A8E /* ViewControllerSec.swift */,
 				BA940A5127F1A93B00655026 /* Facts.csv */,
+				A5AE76B32832702F00805BB9 /* Events.csv */,
 				A559BC7028105109005DA920 /* Quotes.csv */,
 				A57F1D9227AD5B7F00971A8E /* Experience.rcproject */,
 				A57F1D9427AD5B7F00971A8E /* Main.storyboard */,
@@ -263,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A57F1D9B27AD5B8D00971A8E /* LaunchScreen.storyboard in Resources */,
-				A51AE96F27E79CE600BA59F4 /* Events.csv in Resources */,
 				A559BC7128105109005DA920 /* Quotes.csv in Resources */,
 				BA940A5227F1A93B00655026 /* Facts.csv in Resources */,
 				BA042F7527EB4F8D00F58B85 /* sketch-coursive.ttf in Resources */,
@@ -272,6 +271,7 @@
 				BA042F7327EB4F8D00F58B85 /* que-fontita.ttf in Resources */,
 				BA042F7727EB4F8D00F58B85 /* Comic Sans MS.ttf in Resources */,
 				BA042F7427EB4F8D00F58B85 /* sketchycomic.ttf in Resources */,
+				A5AE76B42832702F00805BB9 /* Events.csv in Resources */,
 				A57F1D9627AD5B7F00971A8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

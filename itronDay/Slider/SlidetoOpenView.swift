@@ -30,14 +30,14 @@ import UIKit
     }()
     public let sliderHolderView: UIView = {
         let view = UIView()
-//        view.layer.borderWidth = 10
-//        view.layer.borderColor = UIColor(hexString: "#7ac9f5").cgColor//UIColor.blue.cgColor
+        view.layer.borderWidth = 15
+        view.layer.borderColor = UIColor(hexString: "#7ac9f5").cgColor//UIColor.blue.cgColor
         return view
     }()
     public let draggedView: UIView = {
         let view = UIView()
-//        view.layer.borderWidth = 10
-//        view.layer.borderColor = UIColor(hexString: "#7ac9f5").cgColor
+        view.layer.borderWidth = 15
+        view.layer.borderColor = UIColor(hexString: "#7ac9f5").cgColor
         return view
     }()
     public let view: UIView = {

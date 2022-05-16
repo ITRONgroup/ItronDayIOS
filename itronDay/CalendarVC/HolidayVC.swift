@@ -52,11 +52,16 @@ class HolidayVC: UIViewController {
         var data = readDataFromCSV(fileName: "Events", fileType: "csv")
         data = cleanRows(file: data!)
         let csvRows = csv(data: data!)
-        for index in 1...1300 {
-            if (date == csvRows[index][1]){
+        
+        print ("vgvhgv")
+        print (date)
+        print (csvRows[1][0])
+        
+        for index in 1...366 {
+            if (date == csvRows[index][0]){
                 
                 var event = ["", ""]
-                event.insert(csvRows[index][2], at: 0)// = csvRows[index][2] as! String
+                event.insert(csvRows[index][1], at: 0)// = csvRows[index][2] as! String
                 //event.insert(csvRows[index+1][2], at: 0)
                 print (event)
                 var stringEvent = event.joined(separator: "")
@@ -197,7 +202,7 @@ class HolidayVC: UIViewController {
         var result: [[String]] = []
         let rows = data.components(separatedBy: "\n")
         for row in rows {
-            let columns = row.components(separatedBy: ",")
+            let columns = row.components(separatedBy: ";")
             result.append(columns)
         }
         return result
