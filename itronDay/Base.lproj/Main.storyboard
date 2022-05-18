@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bHl-Sw-92e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v91-PM-eoR">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -103,9 +103,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
-                                <connections>
-                                    <segue destination="v91-PM-eoR" kind="presentation" modalPresentationStyle="fullScreen" id="BLe-Mh-q18"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AP-fE-h1a">
                                 <rect key="frame" x="115" y="740" width="175" height="70"/>
@@ -113,7 +110,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <segue destination="Kwg-OQ-M3S" kind="presentation" modalPresentationStyle="fullScreen" id="ADi-Jk-hFD"/>
+                                    <segue destination="v91-PM-eoR" kind="presentation" modalPresentationStyle="fullScreen" id="UId-xl-aHq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,7 +149,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="button1" title=""/>
                                 <connections>
-                                    <segue destination="bHl-Sw-92e" kind="presentation" modalPresentationStyle="fullScreen" id="CSc-ZC-urK"/>
+                                    <segue destination="UwD-9j-VDh" kind="presentation" modalPresentationStyle="fullScreen" id="R03-Xh-dho"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -230,7 +227,7 @@
                                     <fragment content="Сегодня грустный день без праздников">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="20" name="ComicSansMS"/>
+                                            <font key="NSFont" size="18" name="ComicSansMS"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -331,8 +328,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PbS-hh-GhU"/>
-        <segue reference="ADi-Jk-hFD"/>
+        <segue reference="VHI-GP-JI4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="aim" width="310" height="310"/>

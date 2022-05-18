@@ -120,16 +120,14 @@ class cubeNode: SCNNode {
         //MARK: грань куба "Праздники"
 
         let eventsData = readDataFromCSV(fileName: "Events", fileType: "csv")
-        let eventsCsvRows = csv(data: eventsData!)
+        let eventsCsvRows = csvEvents(data: eventsData!)
                
         var stringEvent = "Праздники"
 
         let dateEventsFormatter = DateFormatter()    // Create Date Formatter
         dateEventsFormatter.dateFormat = "dd.MM"  // Set Date/Time Style
         let dateEventsString = dateEventsFormatter.string(from: date)
-        
-        print ("vgvhgv")
-           
+    
         print (dateEventsString)
         
         for index in 1...366 {
@@ -300,6 +298,16 @@ func csv(data: String) -> [[String]] {
     let rows = data.components(separatedBy: "\n")
     for row in rows {
         let columns = row.components(separatedBy: ",")
+        result.append(columns)
+    }
+    return result
+}
+
+func csvEvents(data: String) -> [[String]] {
+    var result: [[String]] = []
+    let rows = data.components(separatedBy: "\n")
+    for row in rows {
+        let columns = row.components(separatedBy: ";")
         result.append(columns)
     }
     return result
