@@ -23,7 +23,6 @@ class HolidayVC: UIViewController {
 //        return cell;
 //    }
 
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var events: UILabel!
     
     var date: String = ""
@@ -36,19 +35,30 @@ class HolidayVC: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        let nextButton = UIButton(frame: CGRect(x: 112, y: 746, width: 180, height: 60))
+        
+        
+        let margins = view.layoutMarginsGuide
+        events.topAnchor.constraint(equalTo: margins.topAnchor, constant: 250 / 840 * screenSize.height).isActive = true
+        
+        let nextButton = UIButton(frame: CGRect(x: 112 / 320 * screenSize.width, y: 746, width: 180, height: 60))
         //nextButton.setTitle("Вернуться", for: .normal)
         //nextButton.backgroundColor = .blue
         nextButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 
         self.view.addSubview(nextButton)
         
-        dateLabel.textAlignment = .center
+        let dateLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 110, height: 110))
+        dateLabel.center = CGPoint(x: 200 , y: 55)
+        dateLabel.backgroundColor = UIColor(patternImage: UIImage(named: "Бумажка")!)
         dateLabel.textColor = UIColor.init(hexString: "#11115d")
+        dateLabel.textAlignment = .center
         dateLabel.font = UIFont(name: "ComicSansMS", size: 18)!
         dateLabel.text = dateToLabel
         print (dateToLabel)
+        print ("dateToLabel")
 
+        self.view.addSubview(dateLabel)
+        
         var data = readDataFromCSV(fileName: "Events", fileType: "csv")
         data = cleanRows(file: data!)
         let csvRows = csv(data: data!)
@@ -79,9 +89,10 @@ class HolidayVC: UIViewController {
             }
         }
         
-        let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 23))
-        labelTime.center = CGPoint(x: 200, y: 134)
+        let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 50))
+        labelTime.center = CGPoint(x: 210, y: 150)
         labelTime.textAlignment = .center
+        labelTime.backgroundColor = UIColor(patternImage: UIImage(named: "место под время")!)
         labelTime.textColor = UIColor.init(hexString: "#11115d")
         labelTime.font = UIFont(name: "ComicSansMS", size: 25)!
         labelTime.text = time()

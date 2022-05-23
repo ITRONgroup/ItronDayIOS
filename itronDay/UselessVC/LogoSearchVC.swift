@@ -28,18 +28,20 @@ class LogoSearchVC: UIViewController {
         let dateString = dateFormatter.string(from: date)
         print (dateString)
     
-        let labelDate = UILabel(frame: CGRect(x: 0 / 320 * screenSize.width, y: 0 / 840 * screenSize.height, width: 200, height: 150))
+        let labelDate = UILabel(frame: CGRect(x: 0, y: 0, width: 110, height: 110))
         labelDate.center = CGPoint(x: 200, y: 55)
         labelDate.textAlignment = .center
+        labelDate.backgroundColor = UIColor(patternImage: UIImage(named: "Бумажка")!)
         labelDate.textColor = UIColor.init(hexString: "#11115d")
         labelDate.font = UIFont(name: "ComicSansMS", size: 18)!
         labelDate.text = dateString
         
         self.view.addSubview(labelDate)
         
-        let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 23))
+        let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 50))
         labelTime.center = CGPoint(x: 200, y: 134)
         labelTime.textAlignment = .center
+        labelTime.backgroundColor = UIColor(patternImage: UIImage(named: "место под время")!)
         labelTime.textColor = UIColor.init(hexString: "#11115d")
         labelTime.font = UIFont(name: "ComicSansMS", size: 25)!
         labelTime.text = time()

@@ -42,7 +42,7 @@
 		BA924B6127BA6EAA002B0870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA924B6027BA6EAA002B0870 /* ViewController.swift */; };
 		BA940A5227F1A93B00655026 /* Facts.csv in Resources */ = {isa = PBXBuildFile; fileRef = BA940A5127F1A93B00655026 /* Facts.csv */; };
 		BAC233D127CCFB7200795F2C /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC233D027CCFB7100795F2C /* CalendarVC.swift */; };
-		BAC233D327CD0F7200795F2C /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC233D227CD0F7200795F2C /* StartScreen.swift */; };
+		BAC233D327CD0F7200795F2C /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC233D227CD0F7200795F2C /* StartScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +83,7 @@
 		BA924B6027BA6EAA002B0870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA940A5127F1A93B00655026 /* Facts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facts.csv; sourceTree = "<group>"; };
 		BAC233D027CCFB7100795F2C /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
-		BAC233D227CD0F7200795F2C /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		BAC233D227CD0F7200795F2C /* StartScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 		A51AE96C27E33E3100BA59F4 /* UselessVC */ = {
 			isa = PBXGroup;
 			children = (
-				BAC233D227CD0F7200795F2C /* StartScreen.swift */,
+				BAC233D227CD0F7200795F2C /* StartScreenVC.swift */,
 				BA39FD0E27CD1A980068C253 /* WarningVC.swift */,
 				BA39FD1027CD1F360068C253 /* DoYouKnowVC.swift */,
 				BA39FD1227CD204C0068C253 /* LogoSearchVC.swift */,
@@ -297,7 +297,7 @@
 				A57F1D9127AD5B7F00971A8E /* ViewControllerSec.swift in Sources */,
 				BAC233D127CCFB7200795F2C /* CalendarVC.swift in Sources */,
 				BA4C59BB27D22A4000870376 /* CalendarCell.swift in Sources */,
-				BAC233D327CD0F7200795F2C /* StartScreen.swift in Sources */,
+				BAC233D327CD0F7200795F2C /* StartScreenVC.swift in Sources */,
 				BA39FD1127CD1F360068C253 /* DoYouKnowVC.swift in Sources */,
 				A57F1D8F27AD5B7F00971A8E /* AppDelegate.swift in Sources */,
 				BA3EB53827E2393600AB15C5 /* Weather.swift in Sources */,
@@ -457,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M68PAW62J5;
 				INFOPLIST_FILE = itronDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M68PAW62J5;
 				INFOPLIST_FILE = itronDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

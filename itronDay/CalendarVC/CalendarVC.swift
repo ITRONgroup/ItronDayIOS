@@ -23,15 +23,20 @@ class CalendarVC: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        let nextButton = UIButton(frame: CGRect(x: 70, y: 601, width: 240, height: 107))
-        nextButton.setTitle("", for: .normal)
+        let nextButton = UIButton(frame: CGRect(x: 40 / 320 * screenSize.width, y: 601 / 840 * screenSize.height, width: 310, height: 100))
+        nextButton.setTitle("Смотреть праздники", for: .normal)
+        nextButton.titleLabel?.font = UIFont(name: "ComicSansMS", size: 25)!
+        let buttonTextColor = UIColor.init(hexString: "#11115d")
+        nextButton.setTitleColor(buttonTextColor, for: .normal)
+        nextButton.setBackgroundImage(UIImage(named: "warningButton.png"), for: .normal)
         nextButton.addTarget(self, action: #selector(dateSelected), for: .touchUpInside)
 
         self.view.addSubview(nextButton)
-        
-        let backButton = UIButton(frame: CGRect(x: 81, y: 711, width: 240, height: 107))
-        backButton.setTitle("", for: .normal)
-        backButton.tintColor = .blue
+        let backButton = UIButton(frame: CGRect(x: 80 / 320 * screenSize.width, y: 720 / 840 * screenSize.height, width: 200, height: 90))
+        backButton.setTitle("Вернуться", for: .normal)
+        backButton.titleLabel?.font = UIFont(name: "ComicSansMS", size: 25)!
+        backButton.setTitleColor(buttonTextColor, for: .normal)
+        backButton.setBackgroundImage(UIImage(named: "warningButton.png"), for: .normal)
         backButton.addTarget(self, action: #selector(backbuttonAction), for: .touchUpInside)
 
         self.view.addSubview(backButton)
@@ -42,18 +47,20 @@ class CalendarVC: UIViewController {
         let dateString = dateFormatter.string(from: date)
         print (dateString)
         
-        let labelDate = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 150))
+        let labelDate = UILabel(frame: CGRect(x: 0, y: 0, width: 110, height: 110))
         labelDate.center = CGPoint(x: 200, y: 55)
         labelDate.textAlignment = .center
+        labelDate.backgroundColor = UIColor(patternImage: UIImage(named: "Бумажка")!)
         labelDate.textColor = UIColor.init(hexString: "#11115d")
         labelDate.font = UIFont(name: "ComicSansMS", size: 18)!
         labelDate.text = dateString
         
         self.view.addSubview(labelDate)
         
-        let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 25))
+        let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 50))
         labelTime.center = CGPoint(x: 200, y: 134)
         labelTime.textAlignment = .center
+        labelTime.backgroundColor = UIColor(patternImage: UIImage(named: "место под время")!)
         labelTime.textColor = UIColor.init(hexString: "#11115d")
         labelTime.font = UIFont(name: "ComicSansMS", size: 25)!
         labelTime.text = time()
@@ -72,6 +79,8 @@ class CalendarVC: UIViewController {
 
             if #available(iOS 14, *) {
                 dateTextField.tintColor = .systemBlue
+                let margins = view.layoutMarginsGuide
+                dateTextField.topAnchor.constraint(equalTo: margins.topAnchor, constant: 140 / 840 * screenSize.height).isActive = true
 //                dateTextField.backgroundColor = .white
                 dateTextField.calendar.veryShortWeekdaySymbols
                 dateTextField.overrideUserInterfaceStyle = .light

@@ -18,8 +18,13 @@ class WarningVC: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
     
-        let button = UIButton(frame: CGRect(x: 90 / 320 * screenSize.width, y: 180 / 840 * screenSize.height, width: 220, height: 86))
-        button.setTitle("", for: .normal)
+        let button = UIButton(frame: CGRect(x: 70 / 320 * screenSize.width, y: 180 / 840 * screenSize.height, width: 230, height: 95))
+        button.setTitle("ВАЖНО", for: .normal)
+        button.titleLabel?.font = UIFont(name: "ComicSansMS", size: 30)!
+        let buttonTextColor = UIColor.init(hexString: "#11115d")
+        button.setTitleColor(buttonTextColor, for: .normal)
+        button.setBackgroundImage(UIImage(named: "warningButton.png"), for: .normal)
+       // button.setImage(UIImage(named: "warningButton.png"), for: .normal)
         button.addTarget(self, action: #selector(buttonCounter), for: .touchUpInside)
 
         self.view.addSubview(button)
