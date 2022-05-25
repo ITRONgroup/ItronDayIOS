@@ -6,6 +6,9 @@
   "resources" : [
     {
       "filename" : "logo.arreferenceimage"
+    },
+    {
+      "filename" : "qr.arreferenceimage"
     }
   ]
 }
