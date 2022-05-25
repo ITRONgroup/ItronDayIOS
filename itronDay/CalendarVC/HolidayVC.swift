@@ -25,6 +25,8 @@ class HolidayVC: UIViewController {
 
     @IBOutlet weak var events: UILabel!
     
+    @IBOutlet weak var dateLabel: UILabel!
+    
     var date: String = ""
     var dateToLabel: String = ""
     
@@ -39,6 +41,7 @@ class HolidayVC: UIViewController {
         
         let margins = view.layoutMarginsGuide
         events.topAnchor.constraint(equalTo: margins.topAnchor, constant: 250 / 840 * screenSize.height).isActive = true
+        //events.backgroundColor = UIColor(patternImage: UIImage(named: "Табличка")!)
         
         let nextButton = UIButton(frame: CGRect(x: 112 / 320 * screenSize.width, y: 746, width: 180, height: 60))
         //nextButton.setTitle("Вернуться", for: .normal)
@@ -90,7 +93,7 @@ class HolidayVC: UIViewController {
         }
         
         let labelTime = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 50))
-        labelTime.center = CGPoint(x: 210, y: 150)
+        labelTime.center = CGPoint(x: 200, y: 134)
         labelTime.textAlignment = .center
         labelTime.backgroundColor = UIColor(patternImage: UIImage(named: "место под время")!)
         labelTime.textColor = UIColor.init(hexString: "#11115d")
