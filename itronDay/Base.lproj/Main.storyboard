@@ -548,7 +548,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ukv-Gy-nbJ"/>
+        <segue reference="026-Tg-4fe"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="aim" width="310" height="310"/>
@@ -559,7 +559,7 @@
         <image name="Календарь" width="310" height="300"/>
         <image name="Карточки новостей" width="210" height="250"/>
         <image name="Табличка" width="330" height="450"/>
-        <image name="рука" width="120" height="100"/>
+        <image name="рука" width="150" height="170"/>
         <image name="файл" width="216" height="230"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

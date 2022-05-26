@@ -12,7 +12,7 @@ class LogoSearchVC: UIViewController {
 
    
     @IBAction func logoLink(_ sender: Any) {
-        if let url = NSURL(string: "https://test.professorstoday.ru/itronday/qr.jpg"){
+        if let url = NSURL(string: "https://test.professorstoday.ru/itronday/qr.png"){
             UIApplication.shared.openURL(url as URL)
             }
     }
