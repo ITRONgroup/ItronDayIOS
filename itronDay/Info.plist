@@ -21,9 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Need access to camera to show augmented reality</string>
+	<string>Необходим доступ к камере для демонстрации дополненной реальности</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Need location to show your city&apos;s weather</string>
+	<string>Необходим доступ к геопозиции для прогноза погоды в вашем городе</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Comic Sans MS.ttf</string>
@@ -44,8 +44,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
