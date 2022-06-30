@@ -5,10 +5,46 @@
   },
   "resources" : [
     {
+      "filename" : "itronVK.arreferenceimage"
+    },
+    {
+      "filename" : "itronWEB.arreferenceimage"
+    },
+    {
       "filename" : "logo.arreferenceimage"
     },
     {
+      "filename" : "mvkVK.arreferenceimage"
+    },
+    {
+      "filename" : "obrasovanie-pressVK.arreferenceimage"
+    },
+    {
+      "filename" : "obrasovanie-pressWEB.arreferenceimage"
+    },
+    {
+      "filename" : "ObrasovaniePress.arreferenceimage"
+    },
+    {
+      "filename" : "ObrasovaniePress1.arreferenceimage"
+    },
+    {
+      "filename" : "ObrasovaniePress2.arreferenceimage"
+    },
+    {
+      "filename" : "ObrasovaniePress3.arreferenceimage"
+    },
+    {
+      "filename" : "ostroumVK.arreferenceimage"
+    },
+    {
       "filename" : "qr.arreferenceimage"
+    },
+    {
+      "filename" : "Visitka-itronGroupstorona.arreferenceimage"
+    },
+    {
+      "filename" : "Vizitka-itronGroup.arreferenceimage"
     }
   ]
 }
