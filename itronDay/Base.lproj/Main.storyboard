@@ -78,7 +78,7 @@
                                             <constraint firstAttribute="height" constant="210" id="n9q-5P-ciA"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Карточки новостей" translatesAutoresizingMaskIntoConstraints="NO" id="H90-ab-4xq">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Карточки новостей" translatesAutoresizingMaskIntoConstraints="NO" id="H90-ab-4xq">
                                         <rect key="frame" x="20" y="20" width="210" height="230"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="230" id="esx-Wx-Uyg"/>
@@ -201,39 +201,13 @@
                                     <segue destination="Kwg-OQ-M3S" kind="presentation" modalPresentationStyle="fullScreen" id="Ukv-Gy-nbJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLY-8Y-FCc">
-                                <rect key="frame" x="199" y="454" width="175" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="Jih-fn-ie8"/>
-                                    <constraint firstAttribute="height" constant="120" id="PpK-Ho-o1Z"/>
-                                </constraints>
-                                <color key="tintColor" red="0.094117648900000003" green="0.094117648900000003" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="button2">
-                                    <attributedString key="attributedTitle">
-                                        <fragment>
-                                            <string key="content">Получить
-логотип</string>
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="ComicSansMS"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="logoLink:" destination="Div-6W-QBQ" eventType="touchUpInside" id="gvq-Hv-mnP"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YLB-d5-9qV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8AP-fE-h1a" firstAttribute="top" secondItem="mLt-Qu-mSl" secondAttribute="bottom" constant="20" id="3xI-MG-Yzc"/>
                             <constraint firstItem="mLt-Qu-mSl" firstAttribute="centerX" secondItem="xq2-8M-myY" secondAttribute="centerX" id="8Gf-Vh-mQx"/>
-                            <constraint firstItem="mLt-Qu-mSl" firstAttribute="top" secondItem="hLY-8Y-FCc" secondAttribute="bottom" constant="71" id="BAT-yF-Oly"/>
                             <constraint firstItem="8AP-fE-h1a" firstAttribute="bottom" secondItem="YLB-d5-9qV" secondAttribute="bottom" id="K2v-tn-gqQ"/>
-                            <constraint firstItem="YLB-d5-9qV" firstAttribute="trailing" secondItem="hLY-8Y-FCc" secondAttribute="trailing" constant="16" id="sv7-P5-vmV"/>
                             <constraint firstItem="8AP-fE-h1a" firstAttribute="centerX" secondItem="xq2-8M-myY" secondAttribute="centerX" id="wHb-1m-U1d"/>
                         </constraints>
                     </view>
@@ -255,6 +229,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nn3-69-UEa">
+                                <rect key="frame" x="50" y="47" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MR2-1w-ht4"/>
+                                    <constraint firstAttribute="height" constant="50" id="WjF-pR-Rk9"/>
+                                </constraints>
+                                <color key="tintColor" red="0.094117648900000003" green="0.094117648900000003" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="Sharik">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="ItronLink:" destination="Fnv-hg-z1g" eventType="touchUpInside" id="rw1-CY-2Uc"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="button2" translatesAutoresizingMaskIntoConstraints="NO" id="yuv-Lt-UP2">
                                 <rect key="frame" x="97" y="687" width="210" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -269,9 +258,30 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="button1" title=""/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-QK-pcH">
+                                <rect key="frame" x="110" y="47" width="70" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="tC6-cx-g06"/>
+                                    <constraint firstAttribute="height" constant="50" id="tqa-Pq-97d"/>
+                                </constraints>
+                                <color key="tintColor" red="0.094117648900000003" green="0.094117648900000003" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="Logotip_bez_nadpisi">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="ObrasovaniePressLink:" destination="Fnv-hg-z1g" eventType="touchUpInside" id="Rbs-Xd-nuu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6uY-Pa-Oiv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nn3-69-UEa" firstAttribute="centerY" secondItem="zKb-3T-vAM" secondAttribute="centerY" constant="-350" id="G0Q-bo-zeA"/>
+                            <constraint firstItem="nn3-69-UEa" firstAttribute="centerX" secondItem="zKb-3T-vAM" secondAttribute="centerX" constant="-120" id="YxD-Ex-pgi"/>
+                            <constraint firstItem="y7q-QK-pcH" firstAttribute="leading" secondItem="nn3-69-UEa" secondAttribute="trailing" constant="10" id="fTy-Uq-IFy"/>
+                            <constraint firstItem="y7q-QK-pcH" firstAttribute="centerY" secondItem="nn3-69-UEa" secondAttribute="centerY" id="x9O-Rf-3Qo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lun-wR-Xy0"/>
                     <connections>
@@ -280,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ost-7Q-heq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834.78260869565224" y="131.91964285714286"/>
+            <point key="canvasLocation" x="833.84615384615381" y="131.51658767772511"/>
         </scene>
         <!--Calendar AlertVC-->
         <scene sceneID="tdH-cv-VLa">
@@ -551,15 +561,17 @@
         <segue reference="026-Tg-4fe"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Logotip_bez_nadpisi" width="500" height="350"/>
+        <image name="Sharik" width="1000" height="1000"/>
         <image name="aim" width="310" height="310"/>
         <image name="button1" width="260" height="100"/>
         <image name="button2" width="210" height="90"/>
         <image name="warningButton" width="250" height="100"/>
         <image name="Кактус" width="240" height="250"/>
         <image name="Календарь" width="310" height="300"/>
-        <image name="Карточки новостей" width="210" height="250"/>
+        <image name="Карточки новостей" width="210" height="250"/>
         <image name="Табличка" width="330" height="450"/>
-        <image name="рука" width="150" height="170"/>
+        <image name="рука" width="132" height="150"/>
         <image name="файл" width="216" height="230"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

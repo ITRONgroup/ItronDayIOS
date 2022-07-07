@@ -5,7 +5,13 @@
   },
   "resources" : [
     {
+      "filename" : "itron.arreferenceimage"
+    },
+    {
       "filename" : "itronVK.arreferenceimage"
+    },
+    {
+      "filename" : "itronVKLight.arreferenceimage"
     },
     {
       "filename" : "itronWEB.arreferenceimage"
@@ -14,10 +20,22 @@
       "filename" : "logo.arreferenceimage"
     },
     {
+      "filename" : "mvk.arreferenceimage"
+    },
+    {
       "filename" : "mvkVK.arreferenceimage"
     },
     {
+      "filename" : "mvkVKLight.arreferenceimage"
+    },
+    {
+      "filename" : "obrasovanie-press.arreferenceimage"
+    },
+    {
       "filename" : "obrasovanie-pressVK.arreferenceimage"
+    },
+    {
+      "filename" : "obrasovanie-pressVKLight.arreferenceimage"
     },
     {
       "filename" : "obrasovanie-pressWEB.arreferenceimage"
@@ -35,7 +53,13 @@
       "filename" : "ObrasovaniePress3.arreferenceimage"
     },
     {
+      "filename" : "ostroum.arreferenceimage"
+    },
+    {
       "filename" : "ostroumVK.arreferenceimage"
+    },
+    {
+      "filename" : "ostroumVKLight.arreferenceimage"
     },
     {
       "filename" : "qr.arreferenceimage"

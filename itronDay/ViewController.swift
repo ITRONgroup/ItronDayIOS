@@ -11,6 +11,16 @@ import ARKit
 
 class ViewController: UIViewController{//}, ARSCNViewDelegate {
 
+    @IBAction func ObrasovaniePressLink(_ sender: Any) {
+        if let url = NSURL(string: "https://obrazovanie.press"){
+            UIApplication.shared.openURL(url as URL)
+            }
+    }
+    @IBAction func ItronLink(_ sender: Any) {
+        if let url = NSURL(string: "https://itron.group"){
+            UIApplication.shared.openURL(url as URL)
+            }
+    }
     
     @IBOutlet var sceneView: ARSCNView!
     
